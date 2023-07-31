@@ -1,0 +1,17 @@
+clc;
+clear all;
+close all;
+disp('For plotting poles and zeros');
+b=input('Input the numerator polynomial coefficients');
+a=input('Input the denominator polynomial coefficients');
+[b,a]=eqtflength(b,a);
+[z,p,k]=tf2zp(b,a);
+zplane(z,p);
+disp('zeros');
+disp(z);
+disp('poles');
+disp(p);
+disp('k');
+disp(k);
+title('Poles and Zeros of Z-transform/Bigyan Dahal/ACE076BCT25');
+grid on;

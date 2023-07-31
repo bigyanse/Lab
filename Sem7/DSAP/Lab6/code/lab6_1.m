@@ -1,0 +1,11 @@
+clc;
+clear all;
+close all;
+n=0:0.1:5;
+a=2;
+y=exp(-a*n);
+plot(n,y);
+xlabel('time');
+ylabel('amplitude');
+title('Exponential Waveform/Bigyan Dahal/ACE076BCT025');
+grid on;
